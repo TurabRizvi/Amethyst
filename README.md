@@ -20,7 +20,7 @@
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 **Amethyst** is an intelligent, modular desktop assistant designed to replace tedious manual interaction with natural, conversational commands. Instead of clicking through menus and opening apps one by one, you simply type or speak — and Amethyst handles it.
 
@@ -28,69 +28,69 @@ It combines the raw power of **C++** for system-level operations with the intell
 
 ---
 
-## ❗ The Problem
+##  The Problem
 
 Traditional desktop environments still force users to:
 
 | Problem | Reality |
 |---|---|
-| 📝 Managing notes | Requires opening a separate application |
-| ⏰ Setting reminders | Involves multiple steps and menus |
-| 📂 Opening apps | Requires manual navigation or searching |
-| 🎙️ Voice interaction | Usually cloud-dependent and privacy-invasive |
-| 🤖 Smart responses | Existing tools lack deep system integration |
+|  Managing notes | Requires opening a separate application |
+|  Setting reminders | Involves multiple steps and menus |
+|  Opening apps | Requires manual navigation or searching |
+|  Voice interaction | Usually cloud-dependent and privacy-invasive |
+|  Smart responses | Existing tools lack deep system integration |
 
 **Amethyst solves all of this from a single chat window.**
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---|---|
-| 💬 Natural Language Input | Type commands the way you speak — no rigid syntax |
-| 🎙️ Offline Voice Recognition | Speak directly to the assistant using Vosk (no internet needed) |
-| 📝 Notes Manager | Add and view persistent notes without leaving the chat |
-| ⏰ Reminder Manager | Set time-based reminders; get pop-up notifications when they're due |
-| 🖥️ System Automation | Open 15+ apps (VS Code, Chrome, Excel, Spotify, etc.) by voice or text |
-| 🤖 AI Fallback | Unrecognized commands are answered intelligently via Groq (LLaMA 3.1) |
-| 🎨 Modern Dark UI | Mobile-inspired chat bubbles, teal accents, auto-scroll |
+|  Natural Language Input | Type commands the way you speak — no rigid syntax |
+|  Offline Voice Recognition | Speak directly to the assistant using Vosk (no internet needed) |
+|  Notes Manager | Add and view persistent notes without leaving the chat |
+|  Reminder Manager | Set time-based reminders; get pop-up notifications when they're due |
+|  System Automation | Open 15+ apps (VS Code, Chrome, Excel, Spotify, etc.) by voice or text |
+|  AI Fallback | Unrecognized commands are answered intelligently via Groq (LLaMA 3.1) |
+|  Modern Dark UI | Mobile-inspired chat bubbles, teal accents, auto-scroll |
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Main Interface
 ![Amethyst UI](screenshots/Amethyst_UI.png)
 
 ---
 
-### 💬 AI Chat — Text Conversation
+###  AI Chat — Text Conversation
 ![ChatBot](screenshots/ChatBot.png)
 
 ---
 
-### 📝 Notes Manager
+###  Notes Manager
 ![Notes Manager](screenshots/Notes_Manager.png)
 
 ---
 
-### ⏰ Reminder Manager
+###  Reminder Manager
 ![Reminder Manager](screenshots/Reminder_Manager.png)
 
 ---
 
-### 🖥️ System Automation — Opening Apps
+###  System Automation — Opening Apps
 ![System Automation](screenshots/System_Automation.png)
 
 ---
 
-### 🎙️ Voice Integration
+###  Voice Integration
 ![Voice Integration](screenshots/Voice_Integration.png)
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 Amethyst follows a clean **5-layer architecture**, where every layer has a clearly defined responsibility:
 
@@ -178,7 +178,7 @@ AMETHYST/
 
 ## 🧩 Modules
 
-### 🧠 CommandProcessor
+###  CommandProcessor
 The brain of Amethyst. Every input — typed or spoken — passes through here.
 
 | Responsibility | Detail |
@@ -191,7 +191,7 @@ The brain of Amethyst. Every input — typed or spoken — passes through here.
 
 ---
 
-### 📝 Notes Manager
+###  Notes Manager
 Save information instantly without leaving the chat.
 
 | Step | Action |
@@ -203,7 +203,7 @@ Save information instantly without leaving the chat.
 
 ---
 
-### ⏰ Reminder Manager
+###  Reminder Manager
 Set reminders and get notified via Windows pop-ups.
 
 | Step | Action |
@@ -216,21 +216,21 @@ Set reminders and get notified via Windows pop-ups.
 
 ---
 
-### 🖥️ System Command Manager
+###  System Command Manager
 Control your desktop through words.
 
 | Category | Supported Apps |
 |---|---|
-| 🔧 Windows Built-in | Calculator, Notepad, File Explorer, Task Manager, Paint, Settings, Control Panel, CMD, PowerShell |
-| 💻 Development Tools | VS Code, Dev-Cpp, Cursor |
-| 📊 Office Suite | Word, PowerPoint, Excel |
-| 🌐 Other Apps | Browser, LinkedIn, Spotify, ChatGPT |
+|  Windows Built-in | Calculator, Notepad, File Explorer, Task Manager, Paint, Settings, Control Panel, CMD, PowerShell |
+|  Development Tools | VS Code, Dev-Cpp, Cursor |
+|  Office Suite | Word, PowerPoint, Excel |
+|  Other Apps | Browser, LinkedIn, Spotify, ChatGPT |
 
 > **Security:** Only predefined commands are accepted — no arbitrary code execution.
 
 ---
 
-### 🤖 AI Integration
+###  AI Integration
 When no command matches, Amethyst falls back to an AI response.
 
 ```
@@ -252,12 +252,12 @@ Speak naturally — Amethyst listens offline.
 | Model | `vosk-model-small-en-us-0.15` |
 | Sample Rate | 16,000 Hz |
 | Duration | 5 seconds per listen |
-| Internet | ❌ Not required |
-| Privacy | ✅ Fully local |
+| Internet |  Not required |
+| Privacy | Fully local |
 
 ---
 
-## 🗣️ Supported Voice & Text Commands
+##  Supported Voice & Text Commands
 
 | Command Example | Action |
 |---|---|
@@ -275,7 +275,7 @@ Speak naturally — Amethyst listens offline.
 
 ---
 
-## 💾 Data Storage
+##  Data Storage
 
 | Data | File | Format | Behavior |
 |---|---|---|---|
@@ -286,20 +286,20 @@ Speak naturally — Amethyst listens offline.
 
 ---
 
-## 🔮 Future Scope
+##  Future Scope
 
 | Enhancement | Description |
 |---|---|
-| 🧠 NLP Intent Classification | Replace keyword matching with a proper NLP model |
-| 🗄️ Database Integration | Migrate from text files to SQLite for scalable storage |
-| 🌍 Cross-Platform GUI | Port GUI to work on Linux and macOS |
-| 🔐 User Authentication | Personal profiles with secured data |
-| 🎤 Improved Voice Model | Larger Vosk model for better accuracy |
-| 📱 Mobile Companion | Remote control via a paired mobile app |
+|  NLP Intent Classification | Replace keyword matching with a proper NLP model |
+|  Database Integration | Migrate from text files to SQLite for scalable storage |
+|  Cross-Platform GUI | Port GUI to work on Linux and macOS |
+|  User Authentication | Personal profiles with secured data |
+|  Improved Voice Model | Larger Vosk model for better accuracy |
+|  Mobile Companion | Remote control via a paired mobile app |
 
 ---
 
-## 👤 Author
+##  Author
 
 **Syed Turab Rizvi**
 AI Undergraduate · Passionate about ML, DL, NLP & Computer Science
