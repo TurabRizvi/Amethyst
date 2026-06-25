@@ -20,22 +20,6 @@
 
 ---
 
-## 📌 Table of Contents
-
-- [Overview](#-overview)
-- [The Problem](#-the-problem)
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [System Architecture](#-system-architecture)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Modules](#-modules)
-- [Supported Voice & Text Commands](#-supported-voice--text-commands)
-- [Data Storage](#-data-storage)
-- [Future Scope](#-future-scope)
-
----
-
 ## 🌟 Overview
 
 **Amethyst** is an intelligent, modular desktop assistant designed to replace tedious manual interaction with natural, conversational commands. Instead of clicking through menus and opening apps one by one, you simply type or speak — and Amethyst handles it.
